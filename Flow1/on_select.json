@@ -1,0 +1,94 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_select",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "asi-karnataka-01",
+        "descriptor": {
+          "name": "ASI - Karnataka Circle"
+        }
+      },
+      "items": [
+        {
+          "id": "hampi-indian-adult",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "80"
+          }
+        },
+        {
+          "id": "hampi-indian-child",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "20"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "entry-ful-01",
+          "type": "ENTRY"
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "100"
+        },
+        "breakup": [
+          {
+            "title": "Indian Adult Entry x2",
+            "item": {
+              "id": "hampi-indian-adult"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "80"
+            }
+          },
+          {
+            "title": "Indian Child Entry x1",
+            "item": {
+              "id": "hampi-indian-child"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "20"
+            }
+          }
+        ],
+        "ttl": "PT15M"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_issue_status",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "issue": {
+      "id": "ISS-PRA-20260415-001",
+      "status": "RESOLVED",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Investigating QR code issue",
+            "updated_at": "2026-03-30T05:33:25.702Z",
+            "updated_by": {
+              "org": {
+                "name": "ASI - Karnataka Circle"
+              }
+            }
+          },
+          {
+            "respondent_action": "RESOLVED",
+            "short_desc": "New QR code issued and sent to customer email. The original QR had an encoding error.",
+            "updated_at": "2026-03-30T05:33:25.702Z",
+            "updated_by": {
+              "org": {
+                "name": "ASI - Karnataka Circle"
+              }
+            }
+          }
+        ]
+      },
+      "resolution": {
+        "short_desc": "New QR code issued",
+        "long_desc": "A replacement digital entry pass with corrected QR code has been emailed to srikanth@prayanaai.com",
+        "action_triggered": "REPLACEMENT"
+      },
+      "created_at": "2026-03-30T05:33:25.702Z",
+      "updated_at": "2026-03-30T05:33:25.702Z"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "issue",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "issue": {
+      "id": "ISS-PRA-20260415-001",
+      "category": "FULFILLMENT",
+      "sub_category": "FLM04",
+      "issue_type": "ISSUE",
+      "status": "OPEN",
+      "complainant_info": {
+        "person": {
+          "name": "Srikanth Vaijapur"
+        },
+        "contact": {
+          "phone": "+919876543210",
+          "email": "srikanth@prayanaai.com"
+        }
+      },
+      "order_details": {
+        "id": "ORD-ASI-20260415-001",
+        "provider_id": "asi-karnataka-01",
+        "items": [
+          {
+            "id": "hampi-indian-adult",
+            "quantity": 2
+          }
+        ]
+      },
+      "description": {
+        "short_desc": "Entry pass QR code not scanning at monument gate",
+        "long_desc": "The QR code on the digital entry pass is not being accepted by the scanner at the Virupaksha Temple entrance. Visited on April 15, 2026 at 10:30 AM.",
+        "images": [
+          {
+            "url": "https://example.com/screenshot-qr-error.jpg"
+          }
+        ]
+      },
+      "issue_actions": {
+        "complainant_actions": [
+          {
+            "complainant_action": "OPEN",
+            "short_desc": "Raised issue for QR code scanning failure",
+            "updated_at": "2026-03-30T05:33:25.702Z",
+            "updated_by": {
+              "org": {
+                "name": "Prayana AI"
+              },
+              "person": {
+                "name": "Srikanth Vaijapur"
+              },
+              "contact": {
+                "phone": "+919876543210"
+              }
+            }
+          }
+        ]
+      },
+      "resolution_provider": {
+        "respondent_info": {
+          "type": "TRANSACTION-COUNTERPARTY-NP"
+        }
+      },
+      "expected_response_time": {
+        "duration": "PT2H"
+      },
+      "expected_resolution_time": {
+        "duration": "P1D"
+      },
+      "created_at": "2026-03-30T05:33:25.702Z",
+      "updated_at": "2026-03-30T05:33:25.702Z"
+    }
+  }
+}

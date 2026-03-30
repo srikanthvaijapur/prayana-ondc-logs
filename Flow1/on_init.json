@@ -1,0 +1,182 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_init",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "asi-karnataka-01"
+      },
+      "items": [
+        {
+          "id": "hampi-indian-adult",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "80"
+          }
+        },
+        {
+          "id": "hampi-indian-child",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "20"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "entry-ful-01",
+          "type": "ENTRY",
+          "state": {
+            "descriptor": {
+              "code": "PENDING"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "100"
+        },
+        "breakup": [
+          {
+            "title": "Indian Adult Entry x2",
+            "item": {
+              "id": "hampi-indian-adult"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "80"
+            }
+          },
+          {
+            "title": "Indian Child Entry x1",
+            "item": {
+              "id": "hampi-indian-child"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "20"
+            }
+          }
+        ]
+      },
+      "payments": [
+        {
+          "id": "pay-01",
+          "type": "PRE-ORDER",
+          "status": "NOT-PAID",
+          "collected_by": "BAP",
+          "params": {
+            "amount": "100",
+            "currency": "INR",
+            "bank_account_number": "1234567890",
+            "bank_code": "SBIN0001234",
+            "virtual_payment_address": "asi@upi"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                  },
+                  "value": "3"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_WINDOW"
+                  },
+                  "value": "P2D"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_BASIS"
+                  },
+                  "value": "DELIVERY"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TYPE"
+                  },
+                  "value": "neft"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "cancellation_fee": {
+            "percentage": "0"
+          },
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "PENDING"
+            }
+          }
+        },
+        {
+          "cancellation_fee": {
+            "percentage": "25"
+          },
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "CONFIRMED"
+            }
+          }
+        },
+        {
+          "cancellation_fee": {
+            "percentage": "100"
+          },
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "USED"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

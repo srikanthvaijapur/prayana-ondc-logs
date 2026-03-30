@@ -1,0 +1,79 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "search",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "descriptor": {
+          "name": "Hampi Group of Monuments"
+        },
+        "category_ids": [
+          "ENTRY_PASS"
+        ]
+      },
+      "fulfillment": {
+        "type": "ENTRY",
+        "stops": [
+          {
+            "location": {
+              "gps": "15.3350,76.4600"
+            }
+          }
+        ],
+        "time": {
+          "range": {
+            "start": "2026-04-15T09:00:00Z",
+            "end": "2026-04-15T17:00:00Z"
+          }
+        }
+      },
+      "tags": [
+        {
+          "descriptor": {
+            "code": "NATIONALITY"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "value": "INDIAN"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "VISITOR_CATEGORY"
+          },
+          "list": [
+            {
+              "descriptor": {
+                "code": "TYPE"
+              },
+              "value": "ADULT"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_cancel",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "order": {
+      "id": "ORD-ASI-20260415-001",
+      "state": "CANCELLED",
+      "provider": {
+        "id": "asi-karnataka-01"
+      },
+      "items": [
+        {
+          "id": "hampi-indian-adult",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
+          }
+        },
+        {
+          "id": "hampi-indian-child",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "entry-ful-01",
+          "type": "ENTRY",
+          "state": {
+            "descriptor": {
+              "code": "CANCELLED"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "100"
+        }
+      },
+      "payments": [
+        {
+          "id": "pay-01",
+          "status": "REFUNDED",
+          "params": {
+            "amount": "75",
+            "currency": "INR",
+            "transaction_id": "refund_Lx1234567890"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "REFUND_DETAILS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "REFUND_AMOUNT"
+                  },
+                  "value": "75"
+                },
+                {
+                  "descriptor": {
+                    "code": "CANCELLATION_FEE"
+                  },
+                  "value": "25"
+                },
+                {
+                  "descriptor": {
+                    "code": "CANCELLATION_FEE_PERCENTAGE"
+                  },
+                  "value": "25"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cancellation": {
+        "reason": {
+          "id": "003",
+          "descriptor": {
+            "short_desc": "Change of travel plans"
+          }
+        },
+        "cancelled_by": "api.prayanaai.com",
+        "time": {
+          "timestamp": "2026-03-30T05:33:25.702Z"
+        }
+      },
+      "updated_at": "2026-03-30T05:33:25.702Z"
+    }
+  }
+}

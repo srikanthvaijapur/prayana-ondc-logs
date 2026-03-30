@@ -1,0 +1,51 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_issue",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "issue": {
+      "id": "ISS-PRA-20260415-001",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "We are investigating the QR code issue. A new pass will be issued if needed.",
+            "updated_at": "2026-03-30T05:33:25.702Z",
+            "updated_by": {
+              "org": {
+                "name": "ASI - Karnataka Circle"
+              },
+              "person": {
+                "name": "Support Team"
+              },
+              "contact": {
+                "phone": "+911234567890",
+                "email": "support@asi.nic.in"
+              }
+            }
+          }
+        ]
+      },
+      "created_at": "2026-03-30T05:33:25.702Z",
+      "updated_at": "2026-03-30T05:33:25.702Z"
+    }
+  }
+}

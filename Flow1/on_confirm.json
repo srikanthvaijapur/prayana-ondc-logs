@@ -1,0 +1,173 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_confirm",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "order": {
+      "id": "ORD-ASI-20260415-001",
+      "state": "ACTIVE",
+      "provider": {
+        "id": "asi-karnataka-01",
+        "descriptor": {
+          "name": "ASI - Karnataka Circle"
+        }
+      },
+      "items": [
+        {
+          "id": "hampi-indian-adult",
+          "quantity": {
+            "selected": {
+              "count": 2
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "80"
+          }
+        },
+        {
+          "id": "hampi-indian-child",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "20"
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "entry-ful-01",
+          "type": "ENTRY",
+          "state": {
+            "descriptor": {
+              "code": "CONFIRMED"
+            }
+          },
+          "customer": {
+            "person": {
+              "name": "Srikanth Vaijapur"
+            },
+            "contact": {
+              "phone": "+919876543210",
+              "email": "srikanth@prayanaai.com"
+            }
+          },
+          "stops": [
+            {
+              "location": {
+                "id": "hampi-loc-01",
+                "gps": "15.3350,76.4600"
+              },
+              "time": {
+                "timestamp": "2026-04-15T09:00:00Z"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "ENTRY_PASS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "QR_CODE_DATA"
+                  },
+                  "value": "HAMPI-ASI-20260415-ADULT-001"
+                },
+                {
+                  "descriptor": {
+                    "code": "PASS_TYPE"
+                  },
+                  "value": "DIGITAL_QR"
+                },
+                {
+                  "descriptor": {
+                    "code": "VALID_FROM"
+                  },
+                  "value": "2026-04-15T06:00:00Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "VALID_UNTIL"
+                  },
+                  "value": "2026-04-15T18:00:00Z"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "Srikanth Vaijapur",
+        "phone": "+919876543210",
+        "email": "srikanth@prayanaai.com"
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "100"
+        },
+        "breakup": [
+          {
+            "title": "Indian Adult Entry x2",
+            "item": {
+              "id": "hampi-indian-adult"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "80"
+            }
+          },
+          {
+            "title": "Indian Child Entry x1",
+            "item": {
+              "id": "hampi-indian-child"
+            },
+            "price": {
+              "currency": "INR",
+              "value": "20"
+            }
+          }
+        ]
+      },
+      "payments": [
+        {
+          "id": "pay-01",
+          "type": "PRE-ORDER",
+          "status": "PAID",
+          "collected_by": "BAP",
+          "params": {
+            "amount": "100",
+            "currency": "INR",
+            "transaction_id": "razorpay_pay_Lx1234567890"
+          }
+        }
+      ],
+      "created_at": "2026-03-30T05:33:25.702Z",
+      "updated_at": "2026-03-30T05:33:25.702Z"
+    }
+  }
+}

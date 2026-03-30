@@ -1,0 +1,288 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_search",
+    "version": "2.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "bpp_id": "ticketing.bpp.ondcapp.com",
+    "bpp_uri": "https://ticketing.bpp.ondcapp.com/api",
+    "transaction_id": "a9aaecca-10b1-4ccd-9db7-8d0e1a26f297",
+    "message_id": "msg-1774848805711",
+    "timestamp": "2026-03-30T05:33:25.702Z",
+    "ttl": "PT30S",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
+      }
+    }
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "ASI Monument Ticketing"
+      },
+      "providers": [
+        {
+          "id": "asi-karnataka-01",
+          "descriptor": {
+            "name": "Archaeological Survey of India - Karnataka Circle",
+            "short_desc": "Monument entry passes for ASI protected sites in Karnataka",
+            "images": [
+              {
+                "url": "https://asi.nic.in/logo.png"
+              }
+            ]
+          },
+          "locations": [
+            {
+              "id": "hampi-loc-01",
+              "gps": "15.3350,76.4600",
+              "address": "Hampi, Hospet Taluk, Bellary District",
+              "city": {
+                "name": "Hampi"
+              },
+              "state": {
+                "name": "Karnataka"
+              },
+              "country": {
+                "code": "IND"
+              }
+            }
+          ],
+          "categories": [
+            {
+              "id": "ENTRY_PASS",
+              "descriptor": {
+                "name": "Entry Pass",
+                "code": "ENTRY_PASS"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "hampi-indian-adult",
+              "descriptor": {
+                "name": "Hampi Group of Monuments - Indian Adult Entry",
+                "short_desc": "Entry pass for Indian nationals (Adult)",
+                "long_desc": "Access to Hampi Group of Monuments including Virupaksha Temple, Vittala Temple Complex, Royal Enclosure",
+                "images": [
+                  {
+                    "url": "https://asi.nic.in/hampi.jpg"
+                  }
+                ]
+              },
+              "category_ids": [
+                "ENTRY_PASS"
+              ],
+              "location_ids": [
+                "hampi-loc-01"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "40",
+                "listed_value": "40"
+              },
+              "quantity": {
+                "available": {
+                  "count": 500
+                },
+                "maximum": {
+                  "count": 10
+                }
+              },
+              "fulfillment_ids": [
+                "entry-ful-01"
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "NATIONALITY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "INDIAN"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "VISITOR_CATEGORY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ADULT"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "TIMING"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "OPENING"
+                      },
+                      "value": "06:00"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "CLOSING"
+                      },
+                      "value": "18:00"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hampi-indian-child",
+              "descriptor": {
+                "name": "Hampi Group of Monuments - Indian Child Entry",
+                "short_desc": "Entry pass for Indian nationals (Child 5-12 years)"
+              },
+              "category_ids": [
+                "ENTRY_PASS"
+              ],
+              "location_ids": [
+                "hampi-loc-01"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "20",
+                "listed_value": "20"
+              },
+              "quantity": {
+                "available": {
+                  "count": 500
+                },
+                "maximum": {
+                  "count": 10
+                }
+              },
+              "fulfillment_ids": [
+                "entry-ful-01"
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "NATIONALITY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "INDIAN"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "VISITOR_CATEGORY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "CHILD"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hampi-foreign-adult",
+              "descriptor": {
+                "name": "Hampi Group of Monuments - Foreign Adult Entry",
+                "short_desc": "Entry pass for Foreign nationals (Adult)"
+              },
+              "category_ids": [
+                "ENTRY_PASS"
+              ],
+              "location_ids": [
+                "hampi-loc-01"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "600",
+                "listed_value": "600"
+              },
+              "quantity": {
+                "available": {
+                  "count": 200
+                },
+                "maximum": {
+                  "count": 10
+                }
+              },
+              "fulfillment_ids": [
+                "entry-ful-01"
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "NATIONALITY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "FOREIGN"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "VISITOR_CATEGORY"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "TYPE"
+                      },
+                      "value": "ADULT"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "entry-ful-01",
+              "type": "ENTRY",
+              "stops": [
+                {
+                  "location": {
+                    "id": "hampi-loc-01",
+                    "gps": "15.3350,76.4600"
+                  }
+                }
+              ],
+              "time": {
+                "label": "VISITING_HOURS",
+                "range": {
+                  "start": "06:00",
+                  "end": "18:00"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
