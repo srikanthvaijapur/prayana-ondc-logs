@@ -1,0 +1,34 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_issue",
+    "core_version": "1.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "transaction_id": "sample-txn-id",
+    "message_id": "sample-msg-id",
+    "timestamp": "2026-03-30T03:36:14.282Z",
+    "ttl": "PT30S",
+    "country": "IND",
+    "city": "std:080"
+  },
+  "message": {
+    "issue": {
+      "id": "issue-sample-123",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "We are looking into the issue",
+            "updated_at": "2026-03-30T03:36:14.290Z",
+            "updated_by": {
+              "org": {
+                "name": "ASI"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

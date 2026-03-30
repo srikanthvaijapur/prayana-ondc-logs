@@ -1,0 +1,31 @@
+{
+  "context": {
+    "domain": "ONDC:TRV14",
+    "action": "on_settle",
+    "core_version": "1.0.0",
+    "bap_id": "api.prayanaai.com",
+    "bap_uri": "https://api.prayanaai.com/api/ondc",
+    "transaction_id": "sample-txn-id",
+    "message_id": "sample-msg-id",
+    "timestamp": "2026-03-30T03:36:14.282Z",
+    "ttl": "PT30S",
+    "country": "IND",
+    "city": "std:080"
+  },
+  "message": {
+    "settlement": {
+      "settlements": [
+        {
+          "settlement_id": "settle-001",
+          "settlement_reference_no": "REF-2026-001",
+          "settlement_status": "SETTLED",
+          "settlement_amount": {
+            "currency": "INR",
+            "value": "72"
+          },
+          "settlement_timestamp": "2026-03-30T03:36:14.290Z"
+        }
+      ]
+    }
+  }
+}
